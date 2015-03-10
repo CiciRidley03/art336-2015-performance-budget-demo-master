@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     "use strict"
 
-    var links = document.querySelectorAll("a.scroll")
+    var links = document.querySelectorAll("a.scroll") 
     var i = links.length
     var root = /firefox|trident/i.test(navigator.userAgent) ? document.documentElement : document.body
     var easeInOutCubic = function(t, b, c, d) {
