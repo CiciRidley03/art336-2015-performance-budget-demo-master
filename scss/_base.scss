@@ -3,7 +3,7 @@
 body {
     background-color: $background-color;
     color: $color;
-    @include body-font-light; 
+    @include body-font-normal; 
     font-size: $base-font-size; 
 } 
 
@@ -11,7 +11,7 @@ img {
     max-width: 100%;   
 } 
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6, h7 {
     @include headline-font;
     line-height: 1;
     overflow: hidden; 
@@ -22,4 +22,24 @@ a {
  &:hover {
      transition: color 300ms linear; 
     }
+}
+
+body {
+    @include body-font-normal;
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, h7 {
+    @include headline-font;
+    line-height: 1;
+}
+
+b, strong {
+    @include body-font-normal;
+}
+
+i, em {
+    @include body-font-itlaic;
 }
